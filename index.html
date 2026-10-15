@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="Mobil1 Центр — демонстрационный сайт автосервиса. Обслуживание, диагностика и ремонт автомобилей.">
+  <title>Mobil1 Центр — сервис вашего автомобиля</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+
+  <header class="header" id="top">
+    <a class="logo" href="#top" aria-label="Mobil1 Центр — главная">
+      <span class="logo-mark">M<span>1</span></span>
+      <span class="logo-text">Mobil1 <b>Центр</b><small>АВТОСЕРВИС</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#about">О центре</a>
+      <a href="#process">Как работаем</a>
+      <a href="#contacts">Контакты</a>
+      <a class="nav-cta" href="#booking">Записаться <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> АВТОСЕРВИС НОВОГО УРОВНЯ</div>
+        <h1>Ваш автомобиль.<br>Наш <span>стандарт.</span></h1>
+        <p class="hero-description">
+          Профессиональная диагностика, техническое обслуживание
+          и ремонт. Внимание к каждой детали.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="button button-red">Записаться на сервис <span>↗</span></a>
+          <a href="#services" class="button button-outline">Наши услуги <span>↓</span></a>
+        </div>
+
+        <div class="hero-bottom">
+          <div><strong>01</strong><span>Точная диагностика</span></div>
+          <div><strong>02</strong><span>Прозрачная смета</span></div>
+          <div><strong>03</strong><span>Внимание к деталям</span></div>
+        </div>
+      </div>
+      <div class="hero-side-label">CARE FOR YOUR CAR — EVERY DETAIL MATTERS</div>
+    </section>
+
+    <div class="ticker" aria-label="Услуги автосервиса">
+      <div class="ticker-track">
+        <span>ДИАГНОСТИКА <i>✳</i> ТЕХОБСЛУЖИВАНИЕ <i>✳</i> РЕМОНТ <i>✳</i> ЗАБОТА ОБ АВТОМОБИЛЕ <i>✳</i></span>
+        <span aria-hidden="true">ДИАГНОСТИКА <i>✳</i> ТЕХОБСЛУЖИВАНИЕ <i>✳</i> РЕМОНТ <i>✳</i> ЗАБОТА ОБ АВТОМОБИЛЕ <i>✳</i></span>
+      </div>
+    </div>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">ЧТО МЫ ДЕЛАЕМ</div>
+          <h2>Всё необходимое.<br><span>В одном центре.</span></h2>
+        </div>
+        <p>От планового обслуживания до поиска сложных неисправностей — подбираем решение под ваш автомобиль.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-number">01 / ДИАГНОСТИКА</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m29 29 10 10M14 20h12M20 14v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Компьютерная диагностика</h3>
+          <p>Проверка электронных систем и выявление возможных неисправностей.</p>
+          <div class="service-bottom"><span>от 1 500 ₽</span><button class="service-select" data-service="Компьютерная диагностика" aria-label="Выбрать компьютерную диагностику">↗</button></div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-number">02 / ОБСЛУЖИВАНИЕ</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M15 7h18v34H15zM19 12h10M19 18h10M19 24h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="29" cy="32" r="5" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3>Замена масла и фильтров</h3>
+          <p>Плановое обслуживание с учётом рекомендаций производителя.</p>
+          <div class="service-bottom"><span>от 2 000 ₽</span><button class="service-select" data-service="Замена масла и фильтров" aria-label="Выбрать замену масла">↗</button></div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-number">03 / ХОДОВАЯ</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="15" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M24 9v9m0 12v9M9 24h9m12 0h9" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3>Ремонт ходовой части</h3>
+          <p>Осмотр подвески, поиск неисправностей и согласование ремонта.</p>
+          <div class="service-bottom"><span>от 2 500 ₽</span><button class="service-select" data-service="Ремонт ходовой части" aria-label="Выбрать ремонт ходовой">↗</button></div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-number">04 / ТОРМОЗА</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="24" cy="24" r="9" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M24 8v7m16 9h-7M24 40v-7M8 24h7" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3>Обслуживание тормозов</h3>
+          <p>Проверка тормозной системы и оценка состояния её компонентов.</p>
+          <div class="service-bottom"><span>от 2 000 ₽</span><button class="service-select" data-service="Обслуживание тормозов" aria-label="Выбрать обслуживание тормозов">↗</button></div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-number">05 / ДВИГАТЕЛЬ</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M10 19h25l5 6v10H10zM16 19v-6h13v6M15 25v5m8-5v5m8-5v5M5 24h5m30 0h3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Обслуживание двигателя</h3>
+          <p>Осмотр, диагностика и согласование необходимых работ.</p>
+          <div class="service-bottom"><span>от 3 000 ₽</span><button class="service-select" data-service="Обслуживание двигателя" aria-label="Выбрать обслуживание двигателя">↗</button></div>
+        </article>
+
+        <article class="service-card service-card-featured reveal">
+          <div class="featured-top">НЕ ЗНАЕТЕ, ЧТО СЛУЧИЛОСЬ?</div>
+          <h3>Начнём с диагностики.</h3>
+          <p>Опишите проблему — в демонстрационной форме можно выбрать удобный способ связи.</p>
+          <a class="featured-link" href="#booking">Обсудить проблему <span>↗</span></a>
+          <div class="featured-watermark">M1</div>
+        </article>
+      </div>
+      <p class="demo-note">Цены приведены для демонстрации дизайна и не являются реальным прайс-листом.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=85" alt="Автомобиль в профессиональной ремонтной мастерской" loading="lazy">
+        <div class="image-caption"><span class="caption-dot"></span> ТЕХНОЛОГИИ · ВНИМАНИЕ · КАЧЕСТВО</div>
+      </div>
+      <div class="about-content reveal">
+        <div class="eyebrow">ФИЛОСОФИЯ СЕРВИСА</div>
+        <h2>Не просто ремонт.<br><span>Ответственный подход.</span></h2>
+        <p>Хороший сервис начинается с понимания проблемы. Поэтому важны точная диагностика, понятное объяснение работ и согласование стоимости до начала ремонта.</p>
+        <div class="about-points">
+          <div><span class="point-icon">01</span><div><h3>Сначала проверяем</h3><p>Необходимые работы определяются после осмотра.</p></div></div>
+          <div><span class="point-icon">02</span><div><h3>Объясняем понятно</h3><p>Вы понимаете, что требуется сделать и почему.</p></div></div>
+          <div><span class="point-icon">03</span><div><h3>Согласовываем работы</h3><p>Стоимость и объём работ должны быть понятны заранее.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section section" id="process">
+      <div class="eyebrow reveal">ПРОСТО И ПОНЯТНО</div>
+      <div class="section-heading reveal">
+        <h2>От первого звонка<br><span>до готового автомобиля.</span></h2>
+      </div>
+      <div class="process-grid">
+        <article class="process-step reveal"><span>01</span><div class="process-line"></div><h3>Заявка</h3><p>Вы описываете проблему и выбираете удобное время.</p></article>
+        <article class="process-step reveal"><span>02</span><div class="process-line"></div><h3>Осмотр</h3><p>Специалист проверяет автомобиль и уточняет причину.</p></article>
+        <article class="process-step reveal"><span>03</span><div class="process-line"></div><h3>Согласование</h3><p>Обсуждаются необходимые работы, сроки и стоимость.</p></article>
+        <article class="process-step reveal"><span>04</span><div class="process-line"></div><h3>Результат</h3><p>После ремонта автомобиль проверяется перед выдачей.</p></article>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-bg"></div>
+      <div class="booking-inner">
+        <div class="booking-copy reveal">
+          <div class="eyebrow"><span class="live-dot"></span> ЗАПИСЬ НА СЕРВИС</div>
+          <h2>Пора уделить<br>внимание <span>автомобилю.</span></h2>
+          <p>Оставьте информацию в форме — мы покажем, как может выглядеть процесс записи на сайте.</p>
+          <div class="booking-assurance"><span>✓</span> Удобная форма записи</div>
+          <div class="booking-assurance"><span>✓</span> Выбор нужной услуги</div>
+          <div class="booking-assurance"><span>✓</span> Адаптация для телефона</div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+          <div class="form-heading"><h3>Запись на обслуживание</h3><span>01 — 04</span></div>
+
+          <label for="clientName">Ваше имя</label>
+          <input id="clientName" name="name" type="text" placeholder="Как к вам обращаться?" required minlength="2" maxlength="60">
+
+          <label for="clientPhone">Номер телефона</label>
+          <input id="clientPhone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required minlength="6" maxlength="25">
+
+          <label for="clientCar">Автомобиль</label>
+          <input id="clientCar" name="car" type="text" placeholder="Например, Toyota Camry" maxlength="100">
+
+          <label for="clientService">Какая услуга нужна?</label>
+          <select id="clientService" name="service" required>
+            <option value="">Выберите услугу</option>
+            <option>Компьютерная диагностика</option>
+            <option>Замена масла и фильтров</option>
+            <option>Ремонт ходовой части</option>
+            <option>Обслуживание тормозов</option>
+            <option>Обслуживание двигателя</option>
+            <option>Нужна консультация</option>
+          </select>
+
+          <button class="button button-red form-submit" type="submit">Проверить заявку <span>↗</span></button>
+          <p class="form-legal">Демонстрационная форма. Данные не отправляются и не сохраняются.</p>
+          <div class="form-result" id="formResult" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-strip section" id="contacts">
+      <div class="contact-block reveal"><div class="eyebrow">КОНТАКТЫ</div><h2>Будем на связи.</h2><p>Контактная информация появится после настройки сайта для реального автосервиса.</p></div>
+      <div class="contact-block reveal"><span class="contact-label">АДРЕС</span><p>Добавьте адрес сервисного центра</p></div>
+      <div class="contact-block reveal"><span class="contact-label">ТЕЛЕФОН</span><p>Укажите рабочий номер</p></div>
+      <div class="contact-block reveal"><span class="contact-label">ГРАФИК РАБОТЫ</span><p>Укажите актуальное расписание</p></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#top"><span class="logo-mark">M<span>1</span></span><span class="logo-text">Mobil1 <b>Центр</b><small>АВТОСЕРВИС</small></span></a>
+    <p>© <span id="year"></span> Mobil1 Центр · Демонстрационный проект</p>
+    <a class="back-top" href="#top">НАВЕРХ ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
